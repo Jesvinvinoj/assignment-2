@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Place Your Order</h1>
+    <!-- Add navigation links here if needed -->
+  </header>
+  <main>
+    <section>
+      <h2>Order Form</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        
+        <p>Size:</p>
+        <input type="radio" id="small" name="size" value="Small" required>
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="Medium" required>
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="Large" required>
+        <label for="large">Large</label>
+        
+        <p>Toppings:</p>
+        <input type="checkbox" id="cheese" name="topping[]" value="Cheese">
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="pepperoni" name="topping[]" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <!-- Add more checkboxes for toppings as needed -->
+        
+        <label for="delivery">Delivery Method:</label>
+        <select id="delivery" name="delivery" required>
+          <option value="pickup">Pickup</option>
+          <option value="delivery">Delivery</option>
+        </select>
+        
+        <input type="submit" value="Place Order">
+      </form>
+    </section>
+    <!-- Add more sections and content as needed -->
+  </main>
+  <footer>
+    <p>Contact us at: contact@example.com</p>
+  </footer>
+</body>
+</html>
